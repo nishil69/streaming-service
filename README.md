@@ -51,3 +51,5 @@ These tests use test input data files which reside in the ../src/main/test/resou
 - Project does not use application config/properties file. However, this must be provided to extract out properties like parallel execution threads, input stream names etc.
 
 - This project does not used logging framework like slf4j or logback. Neither does it use any other helpers like "Lombok" for model objects etc.
+
+- I am aware that exception handling in the processTransaction(...) can be handled differently using .exceptionally etc. However, due to compiler not behaving as it, ideally, should, I have used try..catch inside the async method in order to move forward with the task.
