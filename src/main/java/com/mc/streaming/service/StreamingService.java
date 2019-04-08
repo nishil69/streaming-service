@@ -29,7 +29,7 @@ public class StreamingService implements Service {
     private final ActorSystem system;
 
     private final static int PARALLEL_PROCESSING_THREADS = 4;
-    private final static int PARALLEL_TX_RESULT_WRITER_THREADS = 4;
+    private final static int PARALLEL_TX_RESULT_WRITER_THREADS = 2;
 
 
     public StreamingService(ActorSystem system) {
